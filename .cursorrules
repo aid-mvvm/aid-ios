@@ -1,0 +1,48 @@
+# Language Configuration
+language: english
+
+# Code Preferences
+code:
+  primary_language: swift
+  frameworks:
+    - UIKit
+    - Foundation
+    - CoreData
+
+# Formatting Rules
+formatting:
+  indent_style: space
+  indent_size: 4
+  end_of_line: lf
+  insert_final_newline: true
+  trim_trailing_whitespace: true
+  max_line_length: off
+
+# Swift Specific
+swift:
+  version: 5.0
+  style_guide: apple
+  # Swift formatting preferences
+  formatting:
+    access_control_position: leading
+    void_return: implicit
+    final_class: true
+
+# iOS Specific
+ios:
+  minimum_deployment_target: 15.0
+  device_orientation:
+    - portrait
+    - landscape
+  interface_style:
+    - light
+    - dark
+
+# Exclusions
+exclude:
+  patterns:
+    - .git/
+    - Pods/
+    - DerivedData/
+    - build/
+    - "*.xcworkspace"
